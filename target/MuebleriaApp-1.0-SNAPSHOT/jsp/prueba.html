@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/cabecera.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap-theme.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap-teme.css'>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport"
+            content="width-device-width, user-scalable=no, initial-scale=1.0, maximun-scale-1.0, minimun-scale=1.9">
+        <title>ensamblajes</title>
+    </head>
+
+    <body>
+        <c:set var="pgTitle" value="Welcome" scope="request" />
+        <jsp:include page="../jsp/header.jsp"></jsp:include>
+
+        <main>
+            <div class="container main">
+
+                <h1>Estado en materia prima</h1>
+                <table class="table table-hover ">
+                    <thead>
+                        <tr class="active">
+                            <th class="danger">Id</th>
+                            <th>Descripcion</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+
+
+                </table>
+            </div>
+        </main>
+
+        <jsp:include page="/jsp/footer.jsp"></jsp:include>
+
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+</body>
+
+</html>

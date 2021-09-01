@@ -1,0 +1,117 @@
+@charset "UTF-8";
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #EAEAEA;
+    color: #17a2b8;
+    padding: 2rem 0;
+    /* esto lo mantiene fijo */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a {
+    color: #17a2b8;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation ul {
+    margin: o;
+    padding: o;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    font-size: 1.8em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background: #ccc;
+}
+
+.logo {
+    letter-spacing: 8px;
+    font-size: 3em;
+}
+
+.footer {
+    background: #EAEAEA;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.main {
+    padding-top: 7rem;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width:767) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul {
+        display: none;
+    }
+    .navigation ul.show {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    .navigation ul li a:hover {
+        background: #ccc;
+    }
+}
